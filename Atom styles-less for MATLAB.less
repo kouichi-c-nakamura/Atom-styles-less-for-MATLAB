@@ -1,0 +1,123 @@
+// MATLAB
+/*
+Atom styles.less file CSS for syntax coloring of MATLAB language.
+*/
+atom-text-editor.editor {
+  .syntax--source.syntax--matlab, .syntax--source.syntax--octave {
+    .syntax--meta.syntax--variable.syntax--other.syntax--valid.syntax--matlab {
+      color: #000000; //black
+    }
+
+    .syntax--variable.syntax--other.syntax--valid.syntax--octave {
+      color: #000000; //black
+    }
+
+    .syntax--constant.syntax--language,
+    .syntax--constant.syntax--numeric {
+      color: #000000; //black
+    }
+
+    // Strings
+    .syntax--string.syntax--quoted.syntax--single,
+    .syntax--constant.syntax--character.syntax--escape,
+    .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+    .syntax--punctuation.syntax--definition.syntax--string.syntax--begin {
+      color: #A020F0; // red
+    }
+
+
+
+    // keywords
+    //.syntax--storage.syntax--type.syntax--function.syntax--matlab,
+    .syntax--storage.syntax--type,
+    .syntax--keyword.syntax--control {
+      color: #0000FF; //blue
+      font-weight: normal;
+    }
+
+    .syntax--keyword.syntax--operator.syntax--symbols,
+    .syntax--keyword.syntax--operator.syntax--transpose {
+        font-weight: normal;
+    }
+
+    // Comments %, %%
+    .syntax--comment.syntax--line.syntax--percentage,
+    .syntax--comment.syntax--line.syntax--double-percentage {
+        color: #228B22; // green
+        font-style: normal;
+
+        .syntax--punctuation.syntax--definition.syntax--comment {
+          color: #228B22; // green
+          font-style: normal;
+        }
+
+        .syntax--storage.syntax--type.syntax--class.syntax--note {
+          color: #228B22; // green
+          font-style: normal;
+        }
+
+        .syntax--storage.syntax--type.syntax--class.syntax--todo {
+          color: #228B22; // green
+          font-style: normal;
+        }
+
+        .syntax--meta.syntax--cell {
+          color: #228B22; // green ... not working
+          font-style: normal;
+        }
+
+        .syntax--markup.syntax--underline.syntax--link {
+          color: #228B22; // green
+        }
+    }
+
+    // Parentheses
+    .syntax--meta.syntax--parens {
+      color: #000000;
+    }
+
+    // function for MATLAB
+    .syntax--meta.syntax--function.syntax--matlab {
+      .syntax--meta.syntax--arguments.syntax--function.syntax--matlab,
+      .syntax--entity.syntax--name.syntax--function.syntax--matlab,
+      .syntax--variable.syntax--parameter.syntax--output.syntax--function.syntax--matlab,
+      .syntax--variable.syntax--parameter.syntax--output.syntax--matlab {
+        color: #000000; //black
+        .syntax--variable.syntax--parameter.syntax--input.syntax--matlab {
+          color: #000000; //black
+        }
+      }
+    }
+
+    // function for Octave
+    .syntax--meta.syntax--function.syntax--without-arguments.syntax--octave {
+      .syntax--entity.syntax--name.syntax--function.syntax--octave,
+      .syntax--variable.syntax--parameter.syntax--output.syntax--function.syntax--octave {
+        color: #000000; //black
+      }
+    }
+
+    .syntax--support.syntax--function.syntax--octave {
+      color: #000000; //black
+    }
+
+
+    // classdef
+    .syntax--meta.syntax--class.syntax--matlab {
+      .syntax--storage.syntax--type.syntax--function.syntax--matlab {
+        color: #0000FF; //blue
+      }
+
+      .syntax--entity.syntax--name.syntax--section.syntax--class.syntax--matlab,
+      .syntax--meta.syntax--function.syntax--matlab,
+      .syntax--meta.syntax--methods.syntax--matlab {
+        color: #000000; //black
+      }
+
+      .syntax--variable.syntax--parameter.syntax--properties.syntax--matlab {
+          color: #000000; //black
+      }
+
+    }
+  }
+}
