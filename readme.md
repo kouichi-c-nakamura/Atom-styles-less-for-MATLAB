@@ -1,6 +1,6 @@
 # README for Atom-styles-less-for-MATLAB
 
-styles.less file customization for MATLAB language in Atom editor.
+`styles.less` file customization for MATLAB language in Atom editor.
 
 This style will mimic the appearance of MATLAB in Atom editor.    
 
